@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=InternationalStudent()
+comment1.params=id\ name\ program\ gender\ college\ countryFrom
+comment1.target=InternationalStudent(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ boolean,\ java.lang.String)
+comment2.params=countryFrom
+comment2.target=void\ setCountryFrom(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getCountryFrom()
+comment4.params=
+comment4.target=double\ calculateFees()
+comment5.params=
+comment5.target=java.lang.String\ toPrint()
+numComments=6
