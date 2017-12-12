@@ -1,6 +1,5 @@
 #BlueJ class context
 comment0.target=MonthlySubscribe
-comment0.text=\r\n\ Write\ a\ description\ of\ class\ MonthlySubscribe\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
 comment1.params=custId\ name\ movieCode\ subCode\ addMovies
 comment1.target=MonthlySubscribe(int,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
 comment10.params=
@@ -9,6 +8,8 @@ comment11.params=
 comment11.target=java.lang.String\ getSubCode()
 comment12.params=
 comment12.target=double\ calCharges()
+comment13.params=
+comment13.target=java.lang.String\ toPrint()
 comment2.params=custId
 comment2.target=void\ setCustId(int)
 comment3.params=name
@@ -25,4 +26,4 @@ comment8.params=
 comment8.target=java.lang.String\ getName()
 comment9.params=
 comment9.target=java.lang.String\ getMovieCode()
-numComments=13
+numComments=14

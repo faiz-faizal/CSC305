@@ -1,14 +1,8 @@
 
-/**
- * Write a description of class MonthlySubscribe here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class MonthlySubscribe extends Movies
 {
-    private String subCode;
-    private String addMovies;
+    public String subCode;
+    public String addMovies;
     
     public MonthlySubscribe( int custId, String name, String movieCode, String subCode, String addMovies)
     {
@@ -28,7 +22,7 @@ public class MonthlySubscribe extends Movies
     public int getCustId(){return custId;}
     public String getName(){return name;}
     public String getMovieCode(){return movieCode;}
-    public String getAddMovies(){return addMovies;}
+    public String getAddMovies(){ return addMovies; }
     public String getSubCode(){return subCode;}
     
     public double calCharges()
@@ -42,6 +36,14 @@ public class MonthlySubscribe extends Movies
        else if(addMovies.equalsIgnoreCase("Learning")){charges = charges + 30;}
       
        return charges;
+    }
+    
+    public String toPrint(){
+        
+           String print ="Monthly Subscribe Details \n Customer ID:" + custId +
+           "\nNAME: " + name + "\nMOVIE CODE " + movieCode + "\nSUBSCRIBE CODE: " + subCode + "\nADDITIONAL MOVIES: " + addMovies +"\nCHARGES: " + calCharges() +"\n";
+           
+        return print;
     }
     
     

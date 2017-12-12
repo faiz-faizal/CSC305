@@ -1,10 +1,4 @@
 
-/**
- * Write a description of class DailyRental here.
- *
- * @author (your name)
- * @version (a version number or a date)
- */
 public class DailyRental extends Movies
 {
     private int days;
@@ -30,10 +24,18 @@ public class DailyRental extends Movies
     public double calCharges()
     {
        double charges = 0;
-       if( movieCode.equalsIgnoreCase("SciFi")){charges = 10.00;}
-       else if ( movieCode.equalsIgnoreCase("Comic")){charges = 8.00;}
-       else if ( movieCode.equalsIgnoreCase("Act")){charges = 5.00;}
+       if( movieCode.equalsIgnoreCase("SciFi")){charges = 10.00 * days;}
+       else if ( movieCode.equalsIgnoreCase("Comic")){charges = 8.00 * days;}
+       else if ( movieCode.equalsIgnoreCase("Act")){charges = 5.00 * days;}
 
        return charges;
+    }
+    
+    public String toPrint(){
+        
+           String print ="Daily Rental Details \n Customer ID:" + custId +
+           "\nNAME: " + name + "\nMOVIE CODE " + movieCode + "\nTOTOAL DAYS: " + days + "\nCHARGES: " + calCharges() +"\n";
+           
+        return print;
     }
 }
